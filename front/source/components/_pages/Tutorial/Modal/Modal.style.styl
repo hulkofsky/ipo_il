@@ -1,0 +1,29 @@
+@import "../../../../style/_variables.styl"
+@import "../../../../style/_mixins.index.styl"
+
+.modal
+  z-index: 1000
+  position: relative
+  min-height: 150px
+  background-color: #fff
+  border-radius: 8px
+  overflow: hidden
+
+.modal__button-wrapper
+  z-index: 1000
+  position: absolute
+  top: 30px
+  right: 30px
+  width: 45px
+  height: 45px
+
+.modal__button
+  display: block
+  width: 45px
+  height: 45px
+  background-image: url(images/close.svg)
+  background-repeat: no-repeat
+  background-position: 50% 0;
+
+.modal__button-text
+  visually-hidden()

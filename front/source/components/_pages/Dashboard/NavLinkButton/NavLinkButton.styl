@@ -1,0 +1,52 @@
+.NavLinkButton {
+
+    display: none
+   
+    &.hide{
+        display: none
+    }    
+
+    &.show {
+        display: none
+        position: fixed;
+        top: 89px;
+        left: 20px
+        width: 40px
+        height: 40px
+
+        .NavLinkButton__button{
+            width: 100%
+            height: 100%
+            display: flex
+            flex-flow: column nowrap
+            justify-content: space-evenly    
+            padding: 0 5px
+
+            .NavLinkButton__button--line{
+                width: 100%
+                height: 3px
+                background-color: rgba(0,0,0,.3)
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape){
+    .NavLinkButton.show {
+        display: block
+    }    
+}
+@media screen and (max-width: 450px){
+    .NavLinkButton.show {
+        display: block
+    }    
+}
+
+.navLinkButtonBackdrop {
+    position: fixed;
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background-color: rgba(0,0,0,.3)
+}

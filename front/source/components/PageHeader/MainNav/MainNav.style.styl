@@ -1,0 +1,56 @@
+@import "../../../style/_variables.styl"
+@import "../../../style/_mixins.index.styl"
+
+.main-nav
+  height: 100%
+
+.main-nav__list
+  display: flex
+  flex-direction: row
+  justify-content: center
+  flex-wrap: wrap
+  height: inherit
+
+.main-nav__item
+  height: inherit
+
+.main-nav__link
+  position: relative
+  display: flex
+  align-items: center
+  max-width: 185px
+  height: inherit
+  padding: 10px 17px
+  text-decoration: none
+
+  &:hover .main-nav__link-text
+    font-weight: 700
+
+  &:active
+    opacity: opacity-active
+
+  &::before
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 5px
+    background-color: green;
+    border-radius: 5px
+    transform: scaleX(0)
+
+.main-nav__link-text
+  line-height: (16 / 14)
+  text-align: center
+  text-transform: uppercase
+  color: #333
+
+.main-nav__link--active
+  cursor: default
+
+  &::before
+    transform: scaleX(1)
+
+  .main-nav__link-text
+    font-weight: 700

@@ -1,0 +1,27 @@
+@import "../../../style/_variables.styl"
+
+.page-content
+  display: grid
+  grid-template-rows: 1fr auto
+  min-height: 100vh
+
+.page-content__main
+  padding-top: 50px
+  padding-bottom: 10px
+
+.page-content__footer
+  grid-row: 2 / 3
+
+.page-overlay
+  z-index: 0
+  position: relative
+
+  &:before
+    content: "";
+    z-index: 500
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background-color: rgba(blue, 0.5)

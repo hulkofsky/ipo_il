@@ -1,0 +1,67 @@
+@import "../../style/_variables.styl"
+@import "../../style/_mixins.index.styl"
+
+.download-button-wrapper
+  width: 180px
+
+.download-button
+  position: relative
+  padding: 55px 15px 15px 15px
+  width: 120px
+  height: 100px
+  border: 2px solid blue
+  border-radius: 8px
+  font-weight: 500
+  font-size: 14px
+  line-height: (16 / 14)
+  text-decoration: none
+  text-align: center
+  color: #333
+
+  &::before
+    content: ""
+    position: absolute
+    top: 15px
+    left: 50%
+    transform: translateX(-50%)
+    width: 25px
+    height: 25px
+    background-image: url(./images/download.svg)
+    background-repeat: no-repeat
+    background-position: 50% 0
+
+.download-button-multiple
+  position: relative
+  padding: 15px 15px 15px 55px
+  width: 180px
+  border: 2px solid green
+  border-radius: 8px
+  font-weight: 500
+  font-size: 14px
+  line-height: (16 / 14)
+  text-decoration: none
+  text-align: center
+  color: #333
+
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 25px
+    transform: translateY(-50%)
+    width: 25px
+    height: 25px
+    background-image: url(./images/downloadGreen.svg)
+    background-repeat: no-repeat
+    background-position: 50% 0
+
+.download-button__filename
+  text-ellipsis()
+  padding-top: 10px
+  padding-bottom: 10px
+  text-align: center
+
+
+.print-button
+  &::before
+    background-image: url(./images/printer.svg)

@@ -1,0 +1,146 @@
+@import "../../../style/_variables.styl"
+@import "../../../style/_mixins.index.styl"
+
+.sign-up__content
+  margin-bottom: 40px
+
+.sign-up__title
+  margin-bottom: 40px
+  font-weight: 500
+  text-align: center
+  line-height: (16 / 14)
+  color: blue
+
+.sign-up__container
+  container()
+  justify-content: space-between
+
+.sign-up__container--center
+  justify-content: center
+  align-items: center
+
+.sign-up__column
+  flex: 0 0 45%
+
+.sign-up__column--mb
+  margin-bottom: 40px
+
+.sign-up__column--pt
+  padding-top: 20px
+
+.sign-up__title-download-link
+  margin-right: 85px
+
+.sign-up__download-link
+  position: relative
+  padding: 55px 15px 15px 15px
+  width: 120px
+  height: 100px
+  border: 2px solid blue
+  border-radius: 8px
+  font-weight: 500
+  font-size: 14px
+  line-height: (16 / 14)
+  text-decoration: none
+  text-align: center
+  color: #333
+
+  &::before
+    content: ""
+    position: absolute
+    top: 15px
+    left: 50%
+    transform: translateX(-50%)
+    width: 25px
+    height: 25px
+    background-image: url(./images/download.svg)
+    background-repeat: no-repeat
+    background-position: 50% 0
+
+.sign-up__add-button-wrapper
+  width: 45%
+
+.sign-up__add-button-my
+  padding: 13px
+  width: 45%
+
+.sign-up__add-button-text
+  position: relative
+  padding-left: 30px /* rtl: 0 */
+  padding-right: 0 /* rtl: 30px */
+  font-weight: 900
+
+  &::before
+    content: ""
+    position: absolute
+    top: 3px
+    left: 2px
+    width: 24px
+    height: 24px
+    background-image: url(./images/plus.svg)
+    background-repeat: no-repeat
+    background-position: 50% 0
+
+.sign-up__photo-wrapper
+  position: relative
+  width: 365px
+  height: 320px
+  background-color: #c4c4c4
+
+.sign-up__photo-text
+  position: absolute
+  top: 50%
+  left: 50% /* rtl: 0 */
+  right: 0 /* 50px */
+  width: 200px
+  padding-top: 80px
+  font-weight: 700
+  text-transform: uppercase
+  line-height: (23 / 14)
+  color: #f2f2f2
+  text-align: center
+  transform: translate(-50%, -50%) /* rtl: translate(-45%, -50%) */
+  cursor: pointer
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: 64px
+    height: 57px
+    background-image: url(./images/photo.svg)
+    background-repeat: no-repeat
+    background-position: 50% 0
+
+.sign-up__photo-input
+  visually-hidden()
+
+.sign-up__preview
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+
+  img
+    width: 100%
+    height: 100%
+
+.sign-up__button
+  position: absolute
+  z-index: 100
+  top: 30px
+  right: 30px
+  display: block
+  width: 25px
+  height: 25px
+  background-image: url(images/close.svg)
+  background-repeat: no-repeat
+  background-position: 50% 0;
+  background-size: 25px 25px
+
+.sign-up__button-text
+  visually-hidden()
+

@@ -1,0 +1,43 @@
+@import "../../style/_variables.styl"
+
+.tabs__navigation
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+
+.tabs__nav-item
+  margin-right: 75px /* rtl: 0 */
+  margin-left: 0 /* rtl: 75px */
+
+  &:last-child
+    margin-right: 0
+
+.tabs__nav-button
+  max-width: 225px
+  width: 225px
+  padding: 15px
+  font-weight: 600
+  font-size: 18px
+  line-height: (21 / 18)
+  color: blue
+  text-align: center
+  background-color: white
+  border: none
+
+.tabs__nav-button--active
+  position: relative
+  cursor: default
+
+  &:active
+    opacity: 1
+
+  &::before
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 15px
+    right: 15px
+    height: 5px
+    background-color: green
+    border-radius: 20px

@@ -1,0 +1,65 @@
+@import "../../style/_mixins.index.styl"
+
+.team-carousel
+  padding-left: 90px
+  padding-right: 90px
+
+  .slider-control-centerleft
+  .slider-control-centerright
+    display: block
+
+    button
+      position: relative
+      font-size: 0
+      background-color: transparent !important
+
+      &::before
+        content: ""
+        center-element()
+        width: 24px
+        height: 24px
+        background-repeat: no-repeat
+
+  .slider-control-bottomcenter
+    display: none
+
+  .slider-control-centerleft
+    left: -45px !important
+
+    button::before
+      background-image: url(./images/arrow.svg)
+
+  .slider-control-centerright
+    right: -45px !important
+
+    button::before
+      background-image: url(./images/arrow.svg)
+      transform: translate(-50%, -50%) rotate(180deg)
+
+.team-card
+  width: 280px
+  margin: 10px
+  padding: 20px
+  background-color: #fff
+  border-radius: 8px
+  box-shadow: 1px 1px 10px rgba(#000, 0.1)
+
+.team-card__photo-wrapper
+  img
+    width: 242px
+    height: 242px
+
+.team-card__detail
+  padding-top: 10px
+
+.team-card__full-name
+  margin-top: 0
+  margin-bottom: 0
+  font-weight: 600
+  font-size: 18px
+  line-height: (30 / 18)
+  color: blue
+  text-align: left
+
+.team-card__post
+  text-align: left

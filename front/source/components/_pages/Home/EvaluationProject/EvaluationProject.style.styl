@@ -1,0 +1,66 @@
+@import "../../../../style/_variables.styl"
+@import "../../../../style/_mixins.index.styl"
+
+.evaluation-projects
+
+  .slider-control-bottomcenter
+    button
+      &::before
+        background-color: green
+
+  .slider
+    .slider-frame
+    .slider-list
+      height: 600px !important
+
+.evaluation-projects__slider-wrapper
+  padding-left: 15px
+  padding-right: 15px
+
+.evaluation-projects__slider-slide
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-around
+
+.evaluation-project-card
+  width: 320px
+  padding: 15px
+  margin-top: 10px
+  margin-bottom: 30px
+  background-color: #fff
+  border-radius: 8px
+  box-shadow: 1px 1px 25px rgba(#000, 0.15)
+
+.evaluation-project-card__player-wrapper
+  position: relative
+  display: block
+
+.evaluation-project-card__player-mask
+  z-index: 10
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background-color: tarnsparent;
+
+.evaluation-project-card__item
+  padding-top: 5px
+
+.evaluation-project-card__title
+  display: inline-block
+  vertical-align: middle
+  width: 100%
+  margin-top: 0
+  margin-bottom: 0
+  font-weight: 600
+  font-size: 18px
+  line-height: (34 / 18)
+  color: color-title-base
+  text-decoration: none
+  text-align: left
+
+.evaluation-project-card__field
+  font-weight: 500
+  text-align: left

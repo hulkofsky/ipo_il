@@ -1,0 +1,23 @@
+@import "../../style/_variables.styl"
+@import "../../style/_mixins.index.styl"
+
+.progress-bar-circle
+  position: relative
+  width: 100px
+  height: 100px
+
+.progress-bar-circle__first
+  stroke: green
+  stroke-width: 9px
+
+.progress-bar-circle__second
+  transition: stroke-dasharray 1s
+  stroke: #f7f7f7
+  stroke-width: 10px
+
+.progress-bar-circle__percent
+  center-element()
+  font-size: 24px
+  line-height: (39 / 24)
+  color: #000
+  text-align: center

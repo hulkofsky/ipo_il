@@ -1,0 +1,22 @@
+@import "../../../style/_variables.styl"
+
+.copyright__text
+  color: color-text-light
+  font-weight: 600
+  line-height: (16 / 14)
+  text-decoration: none
+
+.text-separator
+  position: relative
+  display: inline-block
+  padding-left: 11px
+  vertical-align: top
+
+  &::before
+    content: "|"
+    position: absolute
+    top: 0
+    right: -7px
+
+  &:last-child::before
+    display: none

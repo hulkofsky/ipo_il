@@ -1,0 +1,130 @@
+@media screen and (max-width: 1600px) {
+    .project-enterpreneur{
+        .tabs__nav-item{
+            margin: 0    
+        }
+        .project-bottom{
+            flex-flow: column nowrap    
+
+            .project__team{
+                margin: 0    
+                max-width: 100%
+            }
+            .project__docs{
+                margin-top: 20px
+            }
+        }
+    }    
+}
+
+// @media screen and (max-width: 1024px)  {
+//     .project-enterpreneur{
+//         .project-bottom{
+//             flex-flow: column nowrap
+
+//             .project__team{
+//                 margin: 0    
+//             }
+//             .project__docs{
+//                 margin-top: 20px}
+//         }    
+//     }
+
+// }
+
+
+@media screen and (max-width: 900px) {
+        .project-enterpreneur{
+            .project-top__info-item:nth-child(2n+2):before{
+                display: none
+            } 
+            .project-top__statistic-button{
+                width: 50%;
+                margin: auto
+            }
+            .tabs__nav-item{
+            margin: 0
+        }
+        }
+}
+
+
+@media screen and (max-width: 450px) {
+    .project-enterpreneur{
+        .project-top{
+
+            &__info-list{
+                flex-flow: column nowrap
+                .project-top__info-item{
+                    width: 100%    
+                }
+            }
+
+            &__video-wrap{
+                min-width: 200px
+                height: auto
+            }
+        }
+
+        .project-bottom{
+            .project__team{
+                padding: 10px
+
+                &-header{
+                    // display: flex;
+                    // flex-flow: column nowrap
+
+                    .project__team-members{
+                        display: none
+                    }
+                }
+
+                .project__team-carsl{
+                    display: flex;
+                    flex-flow: column nowrap;
+                    width: 100%
+                    height: auto    
+
+                    .slider-frame{
+                        overflow-y: scroll !important;    
+
+                        .slider-list{
+                            width: 100% !important;
+                            margin: 0 !important;
+
+                            .slider-slide{
+                                width: 100% !important
+                                margin: auto !important;
+                            }
+                        }
+                    }
+
+                    .project__team-items-column{
+                        max-height: auto;
+                        height: auto;
+                        flex-flow: column nowrap
+                        align-items: center
+
+                        .project__team-item{
+                            margin-right: 0
+                            
+                            }
+                    }
+                }
+            }
+
+            .project__docs{
+                .tabs{
+                    &__nav-item{
+                        margin: 0
+                    }
+                    div{
+                        display: flex;
+                        flex-flow: column nowrap
+                        align-items: center
+                    }
+                }
+            }
+        }
+    }    
+}

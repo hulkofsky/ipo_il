@@ -1,0 +1,102 @@
+@import "../../../../style/_variables.styl"
+
+.steps-review
+  padding-top: 35px
+
+.steps-review__wrapper
+  padding-left: 75px
+  padding-right: 75px
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  padding-top: 15px
+  padding-bottom: 15px
+  border-bottom: 2px solid #ececec
+
+  &:last-child
+    border-bottom: none
+    padding-bottom: 15px
+
+.steps-review__inner
+  width: 50%
+
+  td
+    padding: 15px
+    vertical-align: middle
+
+.steps-review__title
+  width: 230px
+  margin-right: 70px
+  font-size: 14px
+  line-height: (16 /14)
+  font-weight: 600
+  color: #8b8b8b
+  text-align: left
+
+.steps-review__text
+  text-align: left
+  font-size: 16px
+  font-weight: 500
+  color: #333
+  line-height: 1.2
+
+.steps-review__text-wrapper
+  display: flex
+  align-items: center
+  padding: 15px
+  margin-bottom: 10px
+
+.steps-review__inner--total
+  width: auto
+  padding-top: 15px
+
+  .steps-review__text-wrapper
+    padding: 25px
+    border-radius: 8px
+    border: 2px solid #c4c4c4
+    min-width: 260px
+
+  .steps-review__title
+    width: auto
+    padding: 0
+    margin-right: 30px
+
+  .steps-review__text
+    padding: 0
+    color: blue
+    font-weight: 500
+    font-size: 24px
+    line-height: (28 / 24)
+    text-transform: uppercase
+
+.steps-review__inner--signature
+  width: 100%
+
+  .steps-review__text-wrapper
+    align-items: flex-start
+
+  .steps-review__title
+    margin-right: 0
+
+  .steps-review__text
+    border-radius: 8px
+    border: 2px solid #c4c4c4
+
+    img
+      width: 530px
+      height: 120px
+
+.steps-page__buttons-wrapper
+  display: flex
+  justify-content: flex-end
+  padding-right: 85px
+
+.steps__switch
+  margin-right: 50px
+
+  .steps__radio
+    margin-bottom: 10px
+
+    &:last-child
+      margin-bottom: 0

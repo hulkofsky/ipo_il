@@ -1,0 +1,305 @@
+.project {
+  background-color #f5f6f8
+
+  &-block {
+    background-color #fff
+  }
+
+  &-top {
+    display flex
+    margin-bottom 20px
+    padding 32px 42px 43px 35px
+
+    @media(max-width 1699px) {
+      flex-wrap wrap-reverse
+      padding 12px 20px 22px 20px
+    }
+
+    &__video {
+      width 100%
+      height 100%
+
+      &-wrap {
+        height 374px
+        min-width 593px
+        margin-right 30px
+
+        @media(max-width: 1699px) {
+          margin 30px auto 0
+          min-width: 500px
+        }
+      }
+    }
+
+    &__info {
+      flex-grow 1
+
+      &-list {
+        display flex
+        justify-content space-between
+        margin-bottom 45px
+
+        @media(max-width 992px) {
+          flex-wrap wrap
+        }
+      }
+
+      &-item {
+        position relative
+        display flex
+        flex-direction column
+        justify-content space-between
+        padding 0 8px
+        text-align center
+        flex-grow 1
+
+        @media(max-width 992px) {
+          width 50%
+        }
+
+        &:nth-child(1n+2) {
+          &::before {
+            content ""
+            position absolute
+            height 41px
+            width 1px
+            background-color #C4C4C4
+            top 50%
+            left 0
+            transform translateY(-50%)
+          }
+        }
+
+        @media(max-width 992px) {
+          margin-bottom 20px
+
+          &:before {
+            display none
+          }
+
+          &:nth-child(2n+2) {
+            &:before {
+              display block
+              left auto
+              right 0
+            }
+          }
+        }
+
+        &-field {
+          justify-content center
+
+          @media(max-width 992px) {
+            display none
+          }
+        }
+      }
+
+      &-days {
+        color #8B8B8B
+        font-size 18px
+        font-weight 500
+      }
+
+      &-value {
+        color #36436B
+        font-size 18px
+        font-weight 600
+
+        &.invested {
+          color #6AB142
+        }
+      }
+
+      &-title {
+        color #333
+        font-size 18px
+        font-weight 500
+        text-align center
+        margin-bottom 10px
+      }
+
+      &-field {
+        margin-bottom 0
+      }
+
+      &-descr {
+        &-title {
+          color #36436B
+          font-size 18px
+          font-weight 600
+          text-align center
+          text-transform uppercase
+          margin-bottom 25px
+        }
+
+        &-text {
+          color #000
+          line-height (24/14)
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    display flex
+  }
+
+  &__team-carsl {
+    width 740px
+    max-height 450px
+
+    .slider-control-bottomcenter {
+      display none
+    }
+
+    .slider-frame {
+      max-height 320px
+    }
+
+    .slider-control-topleft,
+    .slider-control-topright {
+      position static !important
+    }
+  }
+
+  &__team {
+    max-width 830px
+    padding 20px 50px
+    margin-right 25px
+
+    &-control {
+      position absolute
+      top 50%
+      width 12px
+      height 23px
+      background url('./img/arrow-control.svg')
+      cursor pointer
+
+      &-prev {
+        left -31px
+        transform translateY(-50%)
+      }
+
+      &-next {
+        right -30px
+        left auto
+        transform rotate(180deg) translateY(-50%)
+      }
+    }
+
+    &-header {
+      position relative
+      margin-bottom 20px
+    }
+
+    &-title {
+      font-size 18px
+      font-weight 600
+      color #36436B
+      text-align center
+    }
+
+    &-members {
+      position absolute
+      right 0
+      top 0
+      color #8B8B8B
+      font-size 18px
+      font-weight 500
+    }
+  }
+
+  &__team-item {
+    width 95px
+    margin-right 66px
+    margin-bottom 25px
+
+    &:nth-child(5n) {
+      margin-right 0
+    }
+
+    &s-column {
+      display flex
+      flex-wrap wrap
+    }
+
+    &-img-wrap {
+      width 95px
+      height 95px
+    }
+
+    &-img {
+      width 100%
+      height 100%
+    }
+
+    &-name {
+      margin-bottom 2px
+      color #36436B
+      font-weight 700
+      text-transform capitalize
+    }
+  }
+
+  &__docs {
+    flex-grow 1
+
+    &-header {
+      margin-top 18px
+      margin-bottom 24px
+      text-align center
+      font-size 18px
+      font-weight 600
+      color #36436B
+      text-transform uppercase
+    }
+
+    &-download-wrap {
+      display flex
+      justify-content center
+    }
+
+    &-tabs {
+      &-tabs {
+        margin-bottom 70px
+      }
+
+      &-button {
+        text-align center
+      }
+    }
+  }
+
+}
+
+.project__team-items-column {
+  max-height 300px
+}
+
+.project__team-item-posе {
+  font-size 12px
+  color #000
+  font-weight 500
+  text-transform capitalize
+}
+.project-top__info-item.statistic-button {
+  display: flex
+  aligh-items: center
+  justify-content center
+}
+.project-top__statistic-button {
+  padding: 9px
+  border: 2px solid #36436b
+  border-radius: 5px
+  color: #36436b
+  font-weight 600
+  cursor: pointer
+  text-transform uppercase
+  // display: flex
+  // aligh-items: center
+  // justify-content center
+  // background-color pink
+}
+
+@import './ProjectSingle-responsive.styl'

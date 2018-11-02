@@ -1,0 +1,74 @@
+@media screen and (max-width: 1024px) {
+    .MyProfile{
+        .MyProfile__switch-button-container{
+            width: 100%
+            justify-content: space-between
+             top: 40px
+            padding-left: 10px
+            padding-right: 10px
+        }
+        .createNewTab__header {
+            padding-bottom: 80px
+        }
+
+        .dash-inner--wrapper {
+            flex-flow: column nowrap
+
+            .dash-inner--wrapper-item{
+                width: 100%
+                &:last-child{
+                    margin:0
+
+                    .MyProfile__NDA {
+                        &.sign-up__title{
+                            margin-bottom: 20px
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .MyProfile{
+        .dash-inner--wrapper {
+            padding-left: 17px
+            padding-right: 17px
+        }
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .MyProfile{
+        .sign-up__container{
+            flex-flow: column nowrap
+        }
+        .sign-up__column {
+            flex: 0 0 48%
+        }
+        .sign-up__container--enterpreneur > * {
+	        width: 100%;	
+        }
+    }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .MyProfile{
+        .sign-up__container--enterpreneur > * {
+	        width: 100%;	
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    .MyProfile{
+       .createNewTab__header {
+            text-align: center
+        }
+        .MyProfile__switch-button-container{
+            top: 70px
+        }
+        .team-members-content {
+            justify-content: center    
+        }
+    }
+}

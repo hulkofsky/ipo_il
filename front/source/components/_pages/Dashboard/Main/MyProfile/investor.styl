@@ -1,0 +1,139 @@
+.profile {
+  padding 30px 50px
+
+  &-button {
+    min-width 104px
+    display block
+    padding 13px
+    color #000
+    font-size 16px
+    font-weight 600
+    text-transform uppercase
+    background-color transparent
+    border-radius 8px
+    border-color #000
+    cursor pointer
+    border 2px solid #000
+
+    &-edit {
+      border-color #8B8B8B
+      color #8B8B8B
+
+      &.active {
+        border-color #36436B
+      }
+    }
+
+    &-save {
+      border-color #36436B
+      color #36436B
+      margin-left 33px
+    }
+  }
+
+  &__buttons {
+    display flex
+    justify-content flex-end
+    margin-bottom 30px
+  }
+
+  &__form {
+    display flex
+    flex-wrap wrap
+    padding-bottom 200px
+
+    &-field {
+      width calc(50%-(105px/2))
+      margin-bottom 17px
+
+      &:nth-child(2n+1) {
+        margin-right 105px
+      }
+
+      @media(max-width 992px) {
+        width 100%
+
+        &:nth-child(2n+1) {
+          margin-right 0
+        }
+      }
+
+
+      .form-control {
+        padding-top 8px
+      }
+
+      &-select {
+        padding-top 8px
+
+        .css-1aya2g8 {
+          background-color #fff
+          border 2px solid #EDEDED
+          border-radius: 8px;
+        }
+
+        .css-1rtrksz {
+          padding: 4px 18px;
+        }
+
+        .css-1492t68 {
+          color #333
+          font-weight 500
+        }
+
+        .css-2o5izw {
+          border 2px solid #EDEDED
+          box-shadow none
+          border-radius: 8px;
+
+          &:hover {
+            border-color #EDEDED
+            box-shadow none
+          }
+
+          // rotate arrow when open
+          .css-19bqh2r {
+            fill #8B8B8B
+            transform rotate(-180deg)
+          }
+        }
+
+        // stroke left to the arrow
+        .css-d8oujb {
+          display none
+        }
+
+        // arrow
+        .css-19bqh2r {
+          fill #8B8B8B
+        }
+
+        //options wrap
+        .css-15k3avv {
+          margin-top -2px
+          border-radius 8px
+        }
+
+        // options wrap inner
+        .css-11unzgr {
+          padding 17px 0
+
+          // options
+          > div {
+            padding 13px 20px
+            background-color #fff
+            color #333
+            font-weight 500
+            cursor pointer
+
+            &:hover {
+              background-color rgba(54, 67, 107, 0.5)
+              color #fff
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@media screen and (max-width: 1024px) {
+    .dash-main{
+        .settings__header{
+            display: none
+        }    
+    }
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
+    .dash-main {
+
+        .settings{
+            padding: 30px 20px
+
+            .settings__form{
+                .settings__checkbox-wrap{
+                    // background-color: pink
+                    padding-left:80px
+                    &:nth-child(2n){
+                        padding-left: 100px
+                    }
+                }
+            }
+        }
+    }        
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .dash-main{
+        .settings{
+            .settings__form{
+                .settings__checkbox-wrap{
+                    width: 50%
+                    padding-left:80px
+
+                    &:nth-child(2n){
+                        padding-left: 100px
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 568px) and (orientation: landscape) {
+    .dash-main{
+        .settings{
+            .settings__form{
+                .settings__checkbox-wrap{
+                    // width: 50%
+                    padding-left:10px
+
+                    &:nth-child(2n){
+                        padding-left: 80px
+                    }
+                }
+            }
+        }
+    }
+}

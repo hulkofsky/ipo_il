@@ -1,0 +1,86 @@
+@import "../../../style/_variables.styl"
+@import "../../../style/_mixins.index.styl"
+
+.user-block-login__wrapper
+  cursor: pointer
+
+.user-block-login__column
+  position: relative
+  padding-top: 13px
+  padding-bottom: 10px
+  padding-right: 20px
+  text-align: center
+  height: 100%
+
+  &:hover
+    .user-block-login__hover-wrapper
+      display: block
+
+  &::before
+    content: ""
+    position: absolute
+    top: 30px
+    right: 5px
+    width: 10px
+    height: 10px
+    transform: rotate(-90deg) /* rtl: rotate(-90deg) */
+    background-image: url(./images/arrow.svg)
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    background-size: 10px auto
+
+.user-block-login__image-wrapper
+  display: flex
+  margin-right: auto
+  margin-left: auto
+  margin-bottom: 3px
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  overflow: hidden
+
+  img
+    display: block
+    margin: auto
+    max-width: 40px
+
+.user-block-login__name
+  max-width: 150px
+  margin-left: auto
+  margin-right: auto
+  font-weight: 500
+  font-size: 14px
+  line-height: (16 / 14)
+  color: blue
+  text-align: center
+
+.user-block-login__hover-wrapper
+  z-index: 500
+  position: absolute
+  bottom: -134px
+  right: 0
+  display: none
+
+.user-block-login__list
+  width: 250px
+  padding: 20px
+  background-color: #fff
+  border-radius: 8px
+  box-shadow: 2px 2px 10px rgba(#000, 0.1)
+
+.user-block-login__item
+  margin-bottom: 8px
+
+  &:last-child
+    margin-bottom: 0
+
+.user-block-login__link
+  display: block
+  font-weight: 500
+  color: #333
+  font-size: 14px
+  line-height: (26 / 14)
+  cursor: pointer
+
+  &:hover
+    font-weight: 700

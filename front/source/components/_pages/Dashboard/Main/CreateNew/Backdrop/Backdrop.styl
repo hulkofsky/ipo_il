@@ -1,0 +1,134 @@
+.Backdrop {
+	position: fixed
+	width: 100vw
+	height: 100vh
+	top: 0
+	left: 0
+	// background-color: rgba(0,0,0,.5)
+	z-index: 1000
+	display: flex
+	align-items: center
+	justify-content: center
+}
+.Backdrop__layout {
+	position: fixed
+	width: 100vw
+	height: 100vh
+	top: 0
+	left: 0
+	background-color: rgba(0,0,0,.5)
+	z-index: 1050
+}
+.Backdrop__photo-container-wrapper {
+	position relative
+	width: 400px
+	height: 400px
+	background-color: white
+	z-index: 1100
+	border-radius: 10px
+	padding: 30px
+}
+
+.Backdrop__photo-container-photo{
+	position relative;
+	width: 100%
+	height 100%
+}
+
+.Backdrop__photo-container--empty {
+	background-color rgba(0,0,0,.2);
+	padding: 40px
+	display: flex
+	flex-flow column nowrap
+	
+	align-items: stretch
+	justify-content: flex-end
+	position relative
+	width: 100%
+	height: 100%
+}
+.Backdrop__photo-container--full {
+	position relative
+	width: 100%
+	height: 100%
+}
+.Backdrop__photo-container--full img {
+	width auto
+	margin auto
+	// margin-bottom 40px
+	height 80%
+}
+.Backdrop__row {
+	position relative;
+	width: 100%
+	height 10%	
+	display flex
+	align-items: center
+	justify-content: space-between
+}
+.Backdrop__row.row--first {
+	padding-right 30px
+}
+	
+.Backdrop__button-add-file {
+	padding 10px 30px;
+	background-color: #6ab142;
+	color: white;
+	font-weight bold
+	cursor pointer
+	border: none
+	border-radius: 10px
+}
+.Backdrop__button-add-file:hover{
+	background-color:  #558e35;		
+}
+.Backdrop__text {
+	color: white
+	text-align center
+	font-weight: bold
+	margin-bottom 20px
+}
+.Backdrop__icon{
+	display flex
+	align-items: center
+	justify-content: center
+	margin: 20px
+	margin-bottom 40px
+	opacity: .8
+}
+
+.Backdrop__progress-bar {
+	position relative
+	width: 90%
+	height 5px
+	border-radius: 5px
+	overflow hidden
+}
+.Backdrop__progress-bar--background {
+	position absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: -100%
+	border-radius 5px
+	background-color: #6ab142
+	// transform translateX(-50%)
+}
+.Backdrop__close-button {
+	// background-color #36436b
+	width: 2rem
+	height: 2rem
+	cursor: pointer
+	// border-radius: 50%
+}
+.Backdrop__close-button svg {
+	width: 100%
+	height: 100%
+}
+// .Backdrop__file-name {
+// 	width: 80%
+// }
+// .Backdrop__percentages {
+// 	width: 20%
+// 	padding-right 20px
+// }

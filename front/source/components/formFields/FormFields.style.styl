@@ -1,0 +1,219 @@
+@import "../../style/_variables.styl"
+@import "../../style/_mixins.index.styl"
+
+.form-control
+  position: relative
+  padding-top: 20px
+
+.form-control__field
+  text-ellipsis()
+  display: block
+  padding: 11px 19px
+  width: 100%
+  font-family: font-family-raleway
+  font-size: font-size-base
+  line-height: 1.3
+  font-weight: 500
+  text-align: left
+  color: #333
+  border: 2px solid #ededed
+  border-radius: 8px
+  outline: none
+
+.form-control__field--textarea
+  white-space: normal
+  overflow: visible
+  resize: none
+
+.form-control__field--error
+  color: red
+  border-color: red
+
+.form-control__label
+  position: absolute
+  left: 20px
+  right: 0
+  display: inline-block
+  font-weight: 500
+  color: #b8b8b8
+  text-align: left
+  vertical-align: middle
+  top: 29px
+  transition-property: opacity
+  transition-duration: duration-base
+
+.form-control__label--error
+  color: red
+
+.form-control__field--error-enter
+  border-color: red
+  color: #333
+
+.form-control__label--short
+  top -3px
+
+.form-control__label-hide
+  opacity: 0
+
+.form-control__label-show
+  opacity: 1
+
+.form-control__errors
+  padding-top: 6px
+
+.form-control__error
+  padding-left: 20px
+  font-weight: 500
+  font-size: 12px
+  line-height: (14 / 12)
+  color: red
+
+.form-control__validation-rules
+  z-index: 100
+  position: absolute
+  top: 80px
+  left: 0
+  right: 0
+  padding: 10px 20px
+  border-radius: 8px
+  background-color: #fff
+  box-shadow: 2px 2px 10px rgba(#000, 0.15)
+
+  &::before
+    z-index: 0
+    content: ""
+    position: absolute
+    top: -18px
+    right: 20px
+    width: 20px
+    height: 18px
+    background-image: url(./images/Vector.svg)
+    background-repeat: no-repeat
+    background-position: 45% 0
+
+.form-control__validation-rules-text
+  color: blue
+
+.form-control__validation-rules-list
+  padding-left: 20px
+  padding-right: 20px
+
+  li
+    position: relative
+
+    &::before
+      position: absolute
+      content: "-"
+      top: 0
+      left: -10px
+
+.my-select
+  padding-top: 18px
+  margin-bottom: 7px
+
+  .css-bl6clz
+    border-color: #ededed
+
+  .css-1rtrksz
+    top: -2px
+
+  .css-1aya2g8
+    border: 2px solid #ededed
+    border-radius: 8px
+    outline: none
+    background-color: #fff
+    min-height: 44px
+    font-weight: 500
+
+    &:hover
+      border-color: #ededed
+
+    .css-1492t68
+      color: #b8b8b8
+
+  .css-2o5izw
+    border: 2px solid #ededed
+    box-shadow: none
+    border-radius: 8px
+    min-height: 44px
+    font-weight: 500
+
+    &:hover
+      border-color: none
+
+.input-file
+  position: relative
+  padding-top: 20px
+
+.input-file__label
+  display: block
+  width: 100%
+  min-height: 44px
+  padding-right: 90px
+  border: 2px solid #ededed
+  border-radius: 8px
+  outline: none
+
+  &::before
+    content: ""
+    position: absolute
+    top: 20px
+    height: 44px
+    right: 85px
+    width: 2px
+    background-color: #ededed
+
+  &::after
+    content: ""
+    position: absolute
+    top: 31px
+    right: 30px
+    width: 24px
+    height: 22px
+    background-image: url(./images/import.svg)
+    background-repeat: no-repeat
+    background-position: 50% 0
+
+.input-file__placeholder
+  text-ellipsis()
+  position: absolute
+  top: 29px
+  left: 20px
+  right: 95px
+  display: inline-block
+  font-weight: 500
+  color: #b8b8b8
+  text-align: left
+  vertical-align: middle
+  transition-property: opacity
+  transition-duration: duration-base
+
+.input-file__placeholder--error
+  color: red
+
+.input-file__placeholder--value
+  color: #333
+
+.input-file__mark
+  position: absolute
+  left: 20px
+  right: 0
+  top -3px
+  display: inline-block
+  font-weight: 500
+  color: #b8b8b8
+  text-align: left
+  vertical-align: middle
+  transition-property: opacity
+  transition-duration: duration-base
+
+.input-file__mark--error
+  color: red
+
+.input-file__field
+  visually-hidden()
+
+[dir=rtl] .input-file__placeholder
+  right: 105px
+  left: 0
+  text-align: right

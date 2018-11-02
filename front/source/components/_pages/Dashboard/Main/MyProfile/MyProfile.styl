@@ -1,0 +1,170 @@
+.MyProfile__board {
+	padding 0 3vw 30px 3vw
+	position relative
+}
+.MyProfile .sign-up__container--enterpreneur {
+	display: flex;
+	flex-flow: row wrap
+	align-items: center
+	justify-content: space-between
+}
+.MyProfile .sign-up__container--enterpreneur > * {
+	width: 47%;	
+}
+.MyProfile__switch-button-container {
+	position absolute
+	display flex
+	top: 0
+	right: 0
+	padding 20px 30px  
+}
+.MyProfile__switch-button {
+	padding 5px 25px  
+	border-radius: 8px
+	border: 2px solid gray
+	color: gray
+	font-weight 600
+	margin-right 30px
+	cursor: pointer
+}
+.MyProfile__switch-button:last-child{
+	margin: 0
+}
+.MyProfile__switch-button.active {
+	color: #36436b
+	border-color #36436b
+}
+.dash-inner--wrapper {
+	display flex
+	justify-content space-between
+	padding 0 0  
+	position relative
+	padding 0 47px
+	
+}
+.dash-inner--wrapper-item{
+	width: 70%
+	margin: 0
+	padding 0 
+	padding-bottom: 10px  
+	padding-top 20px
+}
+.dash-inner--wrapper-item:last-child{
+	width: 30%
+	display: flex
+	flex-flow: column
+	align-items:center
+	justify-content: center
+	margin-left 20px
+	padding-bottom 60px
+	padding-top: 20px
+	
+}
+.MyProfile__NDA__content{
+	width 80%
+	height: 100px
+}
+.MyProfile__NDA.sign-up__title-download-link {
+	margin: auto
+	display flex
+	align-items: center
+	justify-content: center
+	padding-top: 10px
+}
+.MyProfile__NDA.sign-up__title {
+	margin-bottom 50px
+	padding-top 10px
+}
+.MyProfile__NDA__link-item {
+	width: 100px
+	height 100px
+	display: block
+	border: 2px solid #36436b
+	border-radius: 5px
+	margin: auto
+}
+.MyProfile__NDA__link {
+	margin: auto
+	display flex
+	align-items: center
+	justify-content: center
+}
+.MyProfile__NDA--team-members {
+	width: 100%
+	padding: 20px 3vw
+}
+.team-members--statistic {
+	color: gray
+	display: flex
+	justify-content space-between
+}
+.team-members--statistic > div:last-child {
+	cursor: pointer
+}
+.MyProfile__NDA--team-members .sign-up__title {
+	margin-bottom 5px
+}
+.team-members-content {
+	padding: 20px 0
+	display: flex
+	flex-flow: row wrap
+	align-items: flex-start
+	justify-content flex-start
+}
+.team-members-content a,
+.team-members--statistic a {
+	text-decoration none
+	color: inherit
+}
+.CreateNewProjectButton__wrapper {
+	display: flex
+		margin-left: auto
+	
+}
+
+@media screen and (max-width: 1399px) {
+	.CreateNewProjectButton__wrapper {
+		margin: 0
+		margin-bottom: 20px
+		width: 100%
+		justify-content center
+	}
+}
+.CreateNewProjectButton {
+	margin-left auto
+	color: white
+	font-size: 14px
+	font-weight 600
+	background-color: #6ab142
+	// padding: 5px 20px
+	padding: 10px 40px
+	
+	cursor: pointer
+	border-radius: 5px
+	display: flex
+	align-items: center
+	justify-content center
+}
+.CreateNewProjectButton:hover{
+	background-color: #558e35;
+	
+}
+@media screen and (max-width: 1399px) {
+.CreateNewProjectButton {
+	margin-left: 0
+	}
+}
+.MyProfile .sign-up__container .select {
+	padding: 0
+	padding-top: 20px
+	border: none
+}
+
+.MyProfile .dash-inner.dash-inner--wrapper-item:first-child {
+	margin-left: 0
+}
+.MyProfile .dash-inner.dash-inner--wrapper-item:last-child {
+	margin-right: 0
+}
+
+@import './MyProfile-responsive.styl'

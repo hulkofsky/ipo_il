@@ -1,0 +1,75 @@
+@import "../../../../style/_variables.styl"
+@import "../../../../style/_mixins.index.styl"
+
+.talking
+  width: 100%
+
+  .slider-control-bottomcenter
+    button
+      &::before
+        background-color: green
+
+  .slider
+    .slider-frame
+    .slider-list
+      height: 250px !important
+
+.talking__slider-wrapper
+  padding-left: 15px
+  padding-right: 15px
+
+.talking__slider-slide
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  align-items: center
+  justify-content: space-evenly
+
+.talking-card
+  display: block
+  width: auto
+  max-width: 50%
+  height: 150px
+  max-height: 150px
+  padding: 15px
+  margin-top: 10px
+  margin-bottom: 30px
+  background-color: #fff
+  border-radius: 8px
+  box-shadow: 1px 1px 25px rgba(#000, 0.15)
+
+  img
+    max-height: 125px
+
+.talking__player-wrapper
+  position: relative
+  display: block
+
+.talking__player-mask
+  z-index: 10
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background-color: tarnsparent;
+
+.talking__item
+  padding-top: 5px
+
+.talking__title
+  display: inline-block
+  vertical-align: middle
+  width: 100%
+  margin-top: 0
+  margin-bottom: 0
+  font-weight: 600
+  font-size: 18px
+  line-height: (34 / 18)
+  color: color-title-base
+  text-decoration: none
+  text-align: left
+
+.talking__field
+  font-weight: 500
+  text-align: left

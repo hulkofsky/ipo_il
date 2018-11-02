@@ -1,0 +1,150 @@
+.stat {
+  padding 30px
+
+  &__inner {
+    background-color #fff
+    padding-bottom 30px
+  }
+
+  &__tabs {
+    margin-bottom 31px
+  }
+
+  &__empty-message {
+    font-size 18px
+    color #36436B
+    text-align center
+  }
+
+  &__total {
+    &-header {
+      display flex
+      justify-content center
+      align-items center
+      max-width 1050px
+      width 100%
+      margin 0 auto 47px
+      padding 27px
+      color #36436B
+      font-size 18px
+      font-weight 600
+      border 1px solid #36436B
+    }
+  }
+
+@import './stat-responsive.styl'
+
+  &__unit {
+    &-header {
+      display flex
+      margin-bottom 30px
+      padding-top 25px
+
+      &-title {
+        margin-right 71px
+        margin-left 50px
+        color #333
+        font-weight 600
+      }
+    }
+
+    &-footer {
+      margin-top 50px
+      padding-left 215px
+    }
+
+    &-items {
+      display flex
+      justify-content space-between
+      max-width 1135px
+      width 100%
+      min-height 25px
+      margin 0 auto
+      color #36436B
+      font-weight 600
+
+    }
+
+    &-item {
+      position relative
+      padding-left 64px
+      white-space pre
+
+      &:before {
+        content ""
+        position absolute
+        width 24px
+        height 24px
+        left 0
+        top 50%
+        transform translateY(-50%)
+        border 3.5px solid #C4C4C4;
+        border-radius 50%
+      }
+
+      &:nth-child(2) {
+        &:before {
+          border-color #36436B
+        }
+      }
+
+      &:nth-child(3) {
+        &:before {
+          border-color #6AB142
+        }
+      }
+
+      &:nth-child(1n+2) {
+        margin-left 20px
+      }
+    }
+  }
+
+  &__point-descr {
+    &:nth-child(1n+2) {
+      position relative
+      margin-left 30px
+
+      &:before {
+        content ""
+        position absolute
+        width 1px
+        height 100%
+        left -15px
+        background-color #C4C4C4
+      }
+
+    }
+
+    &-value {
+      display block
+      font-size 18px
+      color #36436B
+      line-height 1
+    }
+
+    &-unit {
+      color #333
+      font-size 14px
+    }
+
+    &-wrap {
+      display flex
+    }
+  }
+
+  &__graph {
+    position relative
+    max-width 1290px
+    margin-left 75px
+
+    &-wrap {
+      position relative
+      margin-top 25px
+    }
+  }
+
+  &__axis-value {
+    font-size 20px
+  }
+}

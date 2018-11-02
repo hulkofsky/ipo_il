@@ -1,0 +1,72 @@
+.TeamMemberEdit .dash-inner{
+	position relative
+}
+
+.TeamMemberEdit__main-container {
+	display flex
+	flex-flow: row nowrap
+	align-items stretch
+	justify-content: space-around
+	margin: 70px 0
+	width: 100%
+	padding-bottom 100px
+	position: relative
+}
+@media screen and (max-width 1340px) {
+	.TeamMemberEdit__main-container{
+		flex-flow: column nowrap
+		align-items: center
+	}
+}
+.TeamMemberEdit__main-container > div:first-child {
+	width: 40%
+	padding: 30px
+	flex-glow: 1
+	
+}
+.TeamMemberEdit__main-container > div:last-child {
+	width: 60%
+	flex-grow: 1
+	padding: 0 40px
+	padding-left 0
+	margin-bottom 0
+}
+.TeamMemberEdit__photo-container .Backdrop__photo-container--empty {
+	background-position top left
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	
+}
+.TeamMemberEdit__photo-container > div {
+	margin: 0
+	// margin-top 30px
+	max-width: 300px
+	max-height: 300px
+	padding: 0
+	margin-left: auto
+	margin-right: auto
+}
+
+.TeamMemberEdit__header {
+	display flex
+	align-items: center
+	justify-content: center
+	color: #36436b
+	font-weight: bold
+	font-size 16px
+	padding: 30px 0 
+	
+}
+.TeamMemberEdit__save-button {
+	position: absolute
+	padding: 5px 30px
+	top: 40px 
+	right: 40px
+	border: 2px solid #36436b
+	border-radius: 8px
+	color: #36436b 
+	cursor: pointer
+	font-weight 600
+}
+
+@import './TeamMemberEdit-responsive.styl'

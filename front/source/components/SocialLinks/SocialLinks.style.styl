@@ -1,0 +1,46 @@
+@import "../../style/_variables.styl"
+@import "../../style/_mixins.index.styl"
+
+.social-links
+  padding-top: 50px
+  padding-left: 50px
+  padding-right: 50px
+
+.social-links__list
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-around
+
+.social-links__item
+  flex: 0 0 200px
+  max-width: 200px
+
+.social-Links__link
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  padding-left: 10px
+  padding-right: 10px
+  text-decoration: none
+
+  &:hover
+    .social-Links__text
+      font-weight: 600
+
+.social-Links__icon-wrapper
+  width: 30px
+  height: 30px
+  margin-right: 10px /*rtl: 0 */
+  margin-left: 0 /*rtl: 10px */
+
+  img
+    width: 30px
+    height: 30px
+
+.social-Links__text
+  font-weight: 500
+  color: #333
+
+

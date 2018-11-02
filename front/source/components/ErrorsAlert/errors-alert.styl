@@ -1,0 +1,70 @@
+@import "../../style/_mixins.index.styl"
+
+.errors
+  z-index: 1000
+  position: fixed
+  top: 20px
+  right: 20px
+
+.errors__item
+  display: flex
+  width: 400px
+  padding: 10px
+  margin-bottom: 5px
+  background-color: rgba(#990000, 0.8)
+  box-shadow: 0 0 10px rgba(#fff, 0.6)
+  border-radius: 5px
+  &:last-child
+    margin-bottom: 0
+
+.errors__icon-wrap
+  display: flex
+  flex-basis: 50px
+
+.errors__icon
+  margin: auto
+  fill: rgba(#fff, 0.8)
+
+.errors__text
+  flex-basis: 310px
+  padding-left: 5px
+  padding-right: 5px
+
+  P
+    margin-bottom: 0
+
+
+.errors__btn-wrap
+  display: flex
+  align-items: flex-start
+  flex-basis: 20px
+  height: 20px
+
+.errors__btn
+  margin: auto
+
+.btn-close
+  transition-property: opacity
+  transition-duration: 0.3s
+
+  &:hover .btn-close__icon
+  &:focus .btn-close__icon
+    fill: #fff
+
+  &:active
+    opacity: 0.7
+
+.btn-close__text
+  visually-hidden()
+
+.btn-close__icon-wrap
+  display: flex
+  width: 20px
+  height: 20px
+
+.btn-close__icon
+  margin: auto
+  fill: rgba(#fff, 0.6)
+  transition-property: fill, opacity
+  transition-duration: 0.3s
+

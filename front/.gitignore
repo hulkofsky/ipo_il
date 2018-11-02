@@ -1,0 +1,8 @@
+# IGNORE FOLDERS
+.idea
+.vscode
+node_modules
+build
+
+# IGNORE FILES
+.directory

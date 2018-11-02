@@ -1,0 +1,38 @@
+@import "../../../style/_variables.styl"
+@import "../../../style/_mixins.index.styl"
+
+.notice
+  position: relative
+  cursor: pointer
+  padding-left: 5px
+  padding-top: 25px
+  height: 100%
+
+  &:hover
+   .notice__hover
+     display: block
+
+.notice__image-wrapper
+  width: 30px
+  height: 30px
+  margin: 5px auto
+
+  img
+    width: 30px
+    height: 30px
+
+.notice__hover
+  z-index: 500
+  position: absolute
+  top: 100%
+  right: 0
+  display: none
+  width: 250px
+  padding: 10px
+  background-color: #fff
+  border-radius: 8px
+  box-shadow: 2px 2px 10px rgba(#000, 0.1)
+  font-weight: 500
+  color: blue
+  text-align: center
+  user-select: none

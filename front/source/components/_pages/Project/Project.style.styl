@@ -1,0 +1,128 @@
+@import "../../../style/_variables.styl"
+@import "../../../style/_mixins.index.styl"
+
+.project-page__container
+  padding-left: 115px
+  padding-right: 115px
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+
+.project-page__project-video
+  width: 595px
+  height: 375px
+
+.project-page__detail
+  flex: 0 0 235px
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-top: 10px
+  padding-left: 20px
+  padding-right: 20px
+
+.project-page__progress-bar
+  margin-bottom: 30px
+
+  .progress-bar-circle
+    width: 120px
+    height: 120px
+
+.project-page__funds
+  margin-bottom: 30px
+  font-weight: 600
+  font-size: 18px
+  line-height: (34 / 18)
+  color: blue
+
+.project-page__finish-date
+  margin-bottom: 30px
+  font-weight: 700
+  font-size: 18px
+  line-height: (23 / 18)
+  color: #e21b28
+
+.project-page__buttons-wrapper
+  display: flex
+  flex-direction: column
+  width: 100%
+
+.project-page__button
+  flex: 0 0 44px
+  margin-bottom: 25px
+  padding: 10px
+
+  &:last-child
+    margin-bottom: 0
+
+.project-page__section
+  margin-bottom: 50px
+  text-align: center
+  padding-left: 115px
+  padding-right: 115px
+
+.project-page__our-team
+  padding-left: 0
+  padding-right: 0
+
+.project-page__our-team-header
+  padding-left: 115px
+  padding-right: 115px
+
+.project-page__subtitle
+  margin-top: 0
+  margin-bottom: 32px
+  font-weight: 600
+  font-size: 18px
+  line-height: (34 / 18)
+  text-transform: uppercase
+  color: blue
+
+.project-page__video-about-company
+  display: flex
+  justify-content: center
+
+.project-page__buttons-wrapper-footer
+  display: flex
+  justify-content: center
+  padding-left: 50px
+  padding-right: 50px
+
+
+.project-page__button-footer
+  width: 250px
+  margin-right: 50px
+
+  &:last-child
+    margin-right: 0
+
+.project-page__tabs
+  padding-top: 35px
+
+.project-page__tabs-content
+  padding-left: 100px
+  padding-right: 100px
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: flex-start
+  padding-top: 50px
+
+.project-page__tabs-content--footer
+  padding-top: 20px
+
+.project-page__tabs-button-center
+  margin-left: auto
+  margin-right: auto
+
+.project-page__tabs-button
+  margin-bottom: 30px
+  margin-right: 65px /* rtl: 0 */
+  margin-left: 0 /* rtl: 65px */
+
+  &:nth-child(3n)
+    margin-right: 0
+
+
+

@@ -1,0 +1,218 @@
+item-width = 340px;
+items-space = 90px;
+
+.projects {
+  position relative
+  width 100%
+  max-width 340px
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.15)
+  border-radius 8px
+  background-color #fff
+  margin 30px (items-space/2)
+  // margin-left 90px
+  flex-grow 1
+  // color #333
+  text-decoration none
+  cursor pointer
+
+  &__inner-link {
+    display block
+    padding 30px
+    color: #333
+    text-decoration none
+  }
+
+  &-tabs {
+    margin-bottom 44px
+  }
+
+  &-grid {
+    display flex
+    flex-wrap wrap
+    justify-content center
+    width 100%
+    // margin 0 (items-space/-2)
+    // margin-left -90px
+    // padding
+
+    &-wrap {
+      display flex
+      justify-content center
+      // margin-left -90px
+      // margin 0 auto
+    }
+
+    &__2 {
+      max-width: item-width * 2 + items-space * 2
+    }
+
+    &__3 {
+      max-width item-width * 3 + items-space * 3
+      padding-top: 30px
+    }
+  }
+
+  &__header {
+    display flex
+    justify-content space-between
+    margin-bottom 15px
+
+    > div {
+      width 50%
+    }
+
+    &-left {
+      position relative
+      padding-left 10px
+    }
+  }
+
+  &__menu {
+    position absolute
+    top: 27px;
+    right: 32px;
+
+    &:hover {
+      .projects__menu-dropdown {
+        display block
+      }
+
+      .projects__menu-dots {
+        background-color #36436B
+      }
+    }
+
+    &-dropdown {
+      display none
+      position absolute
+      top 8px
+      right -23px
+      padding-top 25px
+    }
+
+    &-list {
+      width 150px
+      padding 16px 21px
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      background-color #fff
+    }
+
+    &-item {
+
+      &:hover {
+        a {
+          color: #36436b;
+          font-weight: 600;
+        }  
+      }
+      &:nth-child(1n+2) {
+        margin-top 7px
+        padding-top 20px
+      }
+    }
+
+    &-link {
+      color #333
+      padding-top 5px
+      padding-bottom 5px
+      font-size 14px
+      font-weight 500
+      text-decoration none
+    }
+
+    &-button {
+      position absolute
+      padding 0 5px
+      right -17px
+      top 8px
+      cursor pointer
+      z-index 3
+    }
+
+    &-dots {
+      display block
+      width 4px
+      height 4px
+      border-radius 50%
+      background-color #C4C4C4
+
+      &:nth-child(1n+2) {
+        margin-top 2px
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom 19px
+    padding-right 10px
+    color #36436B
+    font-weight 600
+    font-size 18px
+  }
+
+  &__field {
+    color #333
+    font-size 14px
+    font-weight 500
+  }
+
+  &__middle {
+    display flex
+    justify-content space-between
+    align-items center
+    margin-bottom 20px
+
+    &-days {
+      color #8B8B8B
+      font-size 14px
+      font-weight 500
+    }
+  }
+
+  &__days {
+    margin-bottom 13px
+  }
+
+  &__footer {
+    display flex
+    justify-content space-between
+    color #333
+
+    &-field-title {
+      font-weight 500
+
+      &:last-child {
+        color #36436B
+      }
+    }
+
+    &-field-value {
+      color #36436B
+      font-weight 600
+    }
+
+    &-field-title,
+    &-field-value {
+      &:nth-child(1n+2) {
+        margin-top 10px
+      }
+    }
+  }
+}
+
+.not-found {
+  position absolute
+  top 50%
+  left 50%
+  transform: translate(-50%, -50%);
+  color #8b8b8b
+  font-size 25px
+}
+
+.project-enterpreneur .project-top__info-item:nth-child(4) {
+  display: none
+  // background-color: red
+  }
+
+@import './project-responsive.styl'

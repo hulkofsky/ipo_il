@@ -1,0 +1,62 @@
+@import "../../../../style/_variables.styl"
+
+.project-type__form
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+  margin-bottom: 40px
+
+  .form-control__field
+    max-width: 150px
+    margin-right: 5px
+    padding-top: 5px
+    padding-bottom: 5px
+    font-weight: 500
+    font-size: 24px
+    line-height: 1
+    color: #36436B
+    text-align: center
+    text-transform: uppercase
+
+.project-type__item
+  display: flex
+  margin-right: 42px // rtl: 0
+  margin-left: 0 // rtl: 42px
+  max-width: 315px
+  justify-content: space-between
+
+  .form-control__field
+    width: 120px
+
+  &:last-child
+    margin-right: 0
+
+[dir=rtl] .project-type__item
+  margin-right: 0
+
+.project-type__text
+  min-width: 92px
+  padding-top: 28px
+  margin-right: 5px
+  font-weight: 600
+  font-size: 24px
+  line-height: (28/24)
+  color: #36436B
+  text-transform: uppercase
+
+.project-type__text-ml
+  margin-left: 5px
+
+.project-type__field-wrapper
+  display: flex
+
+  .project-type__text
+    margin-left: 5px
+
+.project-type__field-error
+  font-weight: 600
+  color: red
+
+.project-type__field-error-text
+  display: block
